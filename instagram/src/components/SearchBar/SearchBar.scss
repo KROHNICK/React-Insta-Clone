@@ -1,0 +1,15 @@
+form {
+  padding-top: 5px;
+}
+input {
+  width: 250px;
+  height: 30px;
+  text-align: center;
+  background-color: rgb(235, 236, 236);
+  font-size: 1.6rem;
+  font-weight: bold;
+  border: 1px solid lightgrey;
+}
+input::placeholder {
+  color: lightgray;
+}
