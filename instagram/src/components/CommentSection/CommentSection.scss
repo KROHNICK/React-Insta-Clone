@@ -1,0 +1,47 @@
+.commentSection {
+  padding: 0 15px;
+}
+.likes {
+  display: flex;
+  margin: 10px 0;
+}
+.likesIcon {
+  font-size: 2.5rem;
+}
+.commentsIcon {
+  font-size: 2.5rem;
+  margin-left: 15px;
+}
+.comments {
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 26px;
+}
+.date {
+  text-align: left;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+span {
+  color: gray;
+}
+a {
+  color: blue;
+}
+form {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid lightgrey;
+  padding-top: 20px;
+}
+input {
+  background-color: white;
+  border: none;
+  width: 90%;
+  text-align: left;
+  font-size: 1.8rem;
+}
+.dots {
+  font-size: 2rem;
+  margin-left: 30px;
+}

@@ -1,5 +1,7 @@
 @import "./components/Header/Header.scss";
 @import "./components/SearchBar/SearchBar.scss";
+@import "./components/PostContainer/PostContainer.scss";
+@import "./components/CommentSection/CommentSection.scss";
 
 * {
   box-sizing: border-box;
