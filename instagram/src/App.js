@@ -6,11 +6,17 @@ import SearchBar from "./components/SearchBar/SearchBarContainer";
 
 class App extends Component {
   constructor() {
+    console.log("constructor running");
     super();
     this.state = {
       posts: dummyData
     };
   }
+
+  componentDidMount() {
+    console.log("CDM running");
+  }
+
   render() {
     return (
       <div className="App">
