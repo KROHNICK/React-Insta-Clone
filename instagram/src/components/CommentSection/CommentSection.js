@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Comment from "./Comment";
-import CommentInput from "./CommentInput";
 
 class CommentSection extends React.Component {
   constructor(props) {
@@ -10,6 +9,26 @@ class CommentSection extends React.Component {
       comments: props.comments
     };
   }
+
+  handleChanges = e => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
+  addComment = e => {
+    e.preventDefault();
+    this.setState({
+      comments: [
+        ...this.state.comments,
+        {
+          username: "KROHNICK",
+          text: this.state.comment
+        }
+      ],
+      text: ""
+    });
+    this.state.comment = "";
+  };
+
   render() {
     return (
       <div>
@@ -17,7 +36,16 @@ class CommentSection extends React.Component {
           <Comment key={i} comment={c} />
         ))}
         <p className="time-stamp">{this.props.timestamp}</p>
-        <CommentInput />
+        <form onSubmit={this.addComment} className="commentInput">
+          <input
+            onSubmit={this.addComment}
+            onChange={this.handleChanges}
+            name="comment"
+            type="text"
+            placeholder="Add comment... "
+          />
+          <i className="fas fa-ellipsis-h" />
+        </form>
       </div>
     );
   }

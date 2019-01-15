@@ -12,12 +12,26 @@ class App extends Component {
       posts: dummyData
     };
   }
+  handleChanges = e => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
+  addLike = e => {
+    e.preventDefault();
+    this.setState({
+      likes: [...this.state.likes, {}]
+    });
+  };
 
   componentDidMount() {
     console.log("CDM running");
+    fetch(dummyData)
+      .then(this.setState({}))
+      .catch(err => console.log("nein"));
   }
 
   render() {
+    console.log("render running");
     return (
       <div className="App">
         <SearchBar />

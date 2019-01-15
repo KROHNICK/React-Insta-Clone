@@ -20,8 +20,8 @@ const Post = props => {
         />
       </div>
       <div className="social-likes">
-        <i class="far fa-heart" />
-        <i class="far fa-comment" />
+        <i className="far fa-heart" />
+        <i className="far fa-comment" />
       </div>
       <div className="scoreLikes">
         <span className="likes">{props.post.likes} likes</span>

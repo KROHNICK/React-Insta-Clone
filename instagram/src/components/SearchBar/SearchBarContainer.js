@@ -1,13 +1,12 @@
 import React from "react";
 import IGLogo from "../../assets/iglogo.png";
-import Camera from "../../assets/camera-logo.svg";
 import "../SearchBar/SearchBar.css";
 
 const SearchBar = () => {
   return (
     <div className="search-bar-wrapper">
       <div className="image-wrapper">
-        <i class="fab fa-instagram logo-camera" />
+        <i className="fab fa-instagram logo-camera" />
         <img alt="instagram logo" src={IGLogo} className="logo-image" />
       </div>
       <div className="search">
@@ -15,13 +14,13 @@ const SearchBar = () => {
       </div>
       <div className="social-wrapper">
         <div className="social">
-          <i class="far fa-compass" />
+          <i className="far fa-compass" />
         </div>
         <div className="social">
-          <i class="far fa-heart" />
+          <i className="far fa-heart" />
         </div>
         <div className="social">
-          <i class="far fa-user" />
+          <i className="far fa-user" />
         </div>
       </div>
     </div>
