@@ -1,12 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Comment from "./Comment";
+import Postlikes from "../PostContainer/PostLikes";
 
 class CommentSection extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      comments: props.comments
+      comments: props.comments,
+      likes: props.likes
     };
   }
 
@@ -32,6 +34,8 @@ class CommentSection extends React.Component {
   render() {
     return (
       <div>
+        {console.log("commentSection", this.props.likes)}
+        <Postlikes likes={this.props.likes} />
         {this.state.comments.map((c, i) => (
           <Comment key={i} comment={c} />
         ))}
