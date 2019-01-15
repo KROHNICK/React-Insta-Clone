@@ -6,6 +6,7 @@ class SearchBar extends React.Component {
   constructor(props) {
     super(props);
   }
+
   render() {
     return (
       <div className="search-bar-wrapper">
@@ -14,7 +15,11 @@ class SearchBar extends React.Component {
           <img alt="instagram logo" src={IGLogo} className="logo-image" />
         </div>
         <div className="search">
-          <input type="text" placeholder="Search" />
+          <input
+            type="text"
+            placeholder="Search"
+            onKeyDown={this.props.searchPosts}
+          />
         </div>
         <div className="social-wrapper">
           <div className="social">
