@@ -24,7 +24,7 @@ class PostLikes extends React.Component {
   render() {
     return (
       <div>
-        {console.log(this.props.totalLikes)}
+        {console.log(this.state.totalLikes)}
         <div className="d-flex action-btns">
           <i onClick={this.addLike} className="far fa-heart" />
           <i className="far fa-comment" />

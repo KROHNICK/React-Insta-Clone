@@ -25,9 +25,11 @@ class Post extends React.Component {
           />
         </div>
         {console.log("post", this.props.post.likes)}
+        {console.log("Post", this.props.post.timestamp)}
         <CommentSection
           comments={this.props.post.comments}
           likes={this.props.post.likes}
+          timestamp={this.props.timestamp}
         />
       </div>
     );

@@ -8,7 +8,8 @@ class CommentSection extends React.Component {
     super(props);
     this.state = {
       comments: props.comments,
-      likes: props.likes
+      likes: props.likes,
+      timestamp: props.timestamp
     };
   }
 
@@ -39,6 +40,7 @@ class CommentSection extends React.Component {
         {this.state.comments.map((c, i) => (
           <Comment key={i} comment={c} />
         ))}
+        {console.log("commentsection", this.props.timestamp)}
         <p className="time-stamp">{this.props.timestamp}</p>
         <form onSubmit={this.addComment} className="commentInput">
           <input

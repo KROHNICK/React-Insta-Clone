@@ -36,3 +36,9 @@ input[name="comment"] {
   text-align: left;
   height: 50px;
 }
+
+.time-stamp {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: lightgrey;
+}
