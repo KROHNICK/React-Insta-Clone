@@ -2,11 +2,7 @@ import React, { Component } from "react";
 import IGLogo from "../../assets/iglogo.png";
 import "../SearchBar/SearchBar.css";
 
-class SearchBar extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
+class SearchBar extends Component {
   render() {
     return (
       <div className="search-bar-wrapper">

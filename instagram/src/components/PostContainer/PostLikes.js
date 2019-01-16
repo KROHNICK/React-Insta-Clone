@@ -1,9 +1,6 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 
-import dummyData from "../../dummy-data";
-
-class PostLikes extends React.Component {
+class PostLikes extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -24,7 +21,7 @@ class PostLikes extends React.Component {
   render() {
     return (
       <div>
-        {console.log(this.state.totalLikes)}
+        {/* {console.log(this.state.totalLikes)} */}
         <div className="d-flex action-btns">
           <i onClick={this.addLike} className="far fa-heart" />
           <i className="far fa-comment" />

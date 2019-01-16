@@ -35,12 +35,12 @@ class CommentSection extends React.Component {
   render() {
     return (
       <div>
-        {console.log("commentSection", this.props.likes)}
+        {/* {console.log("commentSection", this.props.likes)} */}
         <Postlikes likes={this.props.likes} />
         {this.state.comments.map((c, i) => (
           <Comment key={i} comment={c} />
         ))}
-        {console.log("commentsection", this.props.timestamp)}
+        {/* {console.log("commentsection", this.props.timestamp)} */}
         <p className="time-stamp">{this.props.timestamp}</p>
         <form onSubmit={this.addComment} className="commentInput">
           <input

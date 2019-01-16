@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import "./Posts.css";
 
-class PostHeader extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+class PostHeader extends Component {
   render() {
     return (
       <div className="post-header">

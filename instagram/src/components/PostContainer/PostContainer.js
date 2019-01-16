@@ -1,12 +1,8 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import Post from "./Post";
 import "./Posts.css";
 
-class PostContainer extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+class PostContainer extends Component {
   render() {
     return (
       <div className="posts-container-wrapper">
