@@ -19,6 +19,7 @@ const Authenticate = App =>
     }
 
     render() {
+      console.log(this.state.loggedIn);
       if (this.state.loggedIn) return <App />;
       return <Login />;
     }
