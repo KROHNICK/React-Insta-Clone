@@ -53,3 +53,14 @@
   margin-left: 15px;
   font-weight: bold;
 }
+.d-flex {
+  text-align: left;
+  font-size: 2rem;
+  padding-left: 20px;
+}
+.totalLikes {
+  text-align: left;
+  font-size: 1.2rem;
+  padding-left: 15px;
+  font-weight: bold;
+}
