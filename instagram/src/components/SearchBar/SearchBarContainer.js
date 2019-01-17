@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import IGLogo from "../../assets/iglogo.png";
 import "../SearchBar/SearchBar.css";
+import Logout from "../Logout/Logout";
 
 class SearchBar extends Component {
   render() {
@@ -24,9 +25,7 @@ class SearchBar extends Component {
           <div className="social">
             <i className="far fa-heart" />
           </div>
-          <div className="social">
-            <i className="far fa-user" />
-          </div>
+          <Logout />
         </div>
       </div>
     );

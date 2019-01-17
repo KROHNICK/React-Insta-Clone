@@ -34,7 +34,7 @@ class Login extends Component {
             type="username"
             name="username"
             value={this.state.username}
-            placeholder="username"
+            placeholder="Username"
           />
         </FormGroup>
         <FormGroup>
@@ -44,10 +44,12 @@ class Login extends Component {
             type="password"
             name="password"
             value={this.state.password}
-            placeholder="password"
+            placeholder="Password"
           />
-          <Button onClick={this.logIn}>Submit</Button>
         </FormGroup>
+        <Button className="btn" onClick={this.logIn}>
+          Submit
+        </Button>
       </Form>
     );
   }
