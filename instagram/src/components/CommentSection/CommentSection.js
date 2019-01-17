@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Comment from "./Comment";
 import Postlikes from "../PostContainer/PostLikes";
+import "./Comment.css";
 
 class CommentSection extends React.Component {
   constructor(props) {

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "../SearchBar/SearchBar.css";
 
 class Logout extends Component {
   constructor(props) {

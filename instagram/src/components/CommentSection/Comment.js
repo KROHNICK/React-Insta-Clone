@@ -1,17 +1,32 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import "./Comment.css";
+import styled from "styled-components";
 
-class Comment extends Component {
-  render() {
-    return (
-      <div className="comment-text">
-        <span className="user">{this.props.comment.username} </span>
-        <span className="comment"> {this.props.comment.text}</span>{" "}
-      </div>
-    );
-  }
-}
+const CommentText = styled.div`
+  text-align: left;
+  padding: 2px;
+  line-height: 24px;
+  margin: 15px 0 15px 10px;
+`;
+
+const User = styled.span`
+  font-weight: bold;
+  font-size: 1.1rem;
+`;
+
+const Comments = styled.span`
+  font-weight: 400;
+  font-size: 1rem;
+`;
+
+const Comment = props => {
+  return (
+    <CommentText>
+      <User>{props.comment.username}</User>
+      <Comments> {props.comment.text}</Comments>{" "}
+    </CommentText>
+  );
+};
 
 Comment.propTypes = {
   comment: PropTypes.shape({
