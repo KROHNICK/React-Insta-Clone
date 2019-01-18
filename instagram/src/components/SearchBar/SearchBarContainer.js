@@ -45,7 +45,7 @@ const SearchLogo = styled.i`
   position: absolute;
   display: inline;
   top: 47px;
-  padding-left: 90px;
+  padding-left: 70px;
   color: grey;
 `;
 

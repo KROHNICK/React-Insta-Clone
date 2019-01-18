@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";
+import IGLogo from "../../assets/iglogo.png";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Login.css";
 
@@ -27,6 +28,7 @@ class Login extends Component {
     console.log(localStorage);
     return (
       <Form className="logInForm">
+        <img className="login-logo" alt="Insta Logo" src={IGLogo} />
         <FormGroup>
           <Label for="loginUsername">Username</Label>
           <Input
