@@ -1,0 +1,33 @@
+.logInForm {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(230, 107, 107);
+  margin: 50px auto;
+  border-radius: 14px;
+  box-shadow: 10px 10px;
+}
+label {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+input::placeholder {
+  font-weight: bold;
+}
+.form-group {
+  text-align: center;
+}
+.btn {
+  margin-top: 20px;
+  background-color: pink;
+  border: 1px solid pink;
+  border-radius: 8px;
+  color: black;
+  font-weight: bold;
+  box-shadow: 5px 5px black;
+}
+.login-logo {
+  width: 60%;
+}
